@@ -32,7 +32,7 @@ body {
 
 a { text-decoration: none; cursor: pointer; }
 
-.app-container {
+.app-container, .app-container1 {
     position: relative;
     border-radius: 10px;
     width: 100%;
@@ -41,8 +41,13 @@ a { text-decoration: none; cursor: pointer; }
     max-height: 900px;
     background: linear-gradient(180deg, rgba(224,233,253,1) 0%, rgba(233,236,241,1) 90%);
     box-shadow: 0 0 0 10px rgba(255, 255, 255,.4);
-    display: flex;
     overflow: hidden;
+}
+.app-container1{
+    display: block;
+}
+.app-container{
+    display: flex;
 }
 
 .left-area {
@@ -606,4 +611,84 @@ a { text-decoration: none; cursor: pointer; }
 .btn-close-right:hover {
     color: var(--dark-font);
 }
+.audio{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+}
+.right{
+    float: right;
+}
+span{
+    padding: 15px;
+}
+.container{
+    padding: 20px;
+    border: none;
+}
+button{
+    border: none;
+    background-color: none;
+    margin-top: 2px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    max-width: 95%;
+    height: 80vh;
+    margin: 20px auto;
+    background: transparent;
+    padding: 20px;
+    border: #3275f7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 90%;
+    height: 36px;
+    padding: 8px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+button{
+    background-color: transparent;
+}
+
+.container span {
+  color: #3275f7;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.container span:hover {
+   color: blue;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
